@@ -7,6 +7,31 @@ aliases:
 
 ---
 
+<!--
+  ~ Licensed to the Apache Software Foundation (ASF) under one
+  ~ or more contributor license agreements.  See the NOTICE file
+  ~ distributed with this work for additional information
+  ~ regarding copyright ownership.  The ASF licenses this file
+  ~ to you under the Apache License, Version 2.0 (the
+  ~ "License"); you may not use this file except in compliance
+  ~ with the License.  You may obtain a copy of the License at
+  ~
+  ~   http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing,
+  ~ software distributed under the License is distributed on an
+  ~ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+  ~ KIND, either express or implied.  See the License for the
+  ~ specific language governing permissions and limitations
+  ~ under the License.
+-->
+
+---
+title: Security
+description: Comprehensive guide to Texera's security model, user roles, access control, and vulnerability reporting
+weight: 70
+---
+
 {{% pageinfo %}}
 This page provides comprehensive information about Texera's security model, including authentication mechanisms, authorization policies, user roles, resource access control, and guidelines for reporting security vulnerabilities. Understanding these security features is essential for deployment managers and users to ensure secure operation of Texera installations.
 {{% /pageinfo %}}
@@ -242,4 +267,3 @@ A list of security contacts for Apache projects is available. If you can't find 
 The general security mailing list address is: security@apache.org. This is a private mailing list.
 
 Please send one plain-text, unencrypted, email for each vulnerability you are reporting. We may ask you to resubmit your report if you send it as an image, movie, HTML, or PDF attachment when you could as easily describe it with plain text.
-

@@ -6,11 +6,35 @@ aliases:
 
 ---
 
+<!--
+  ~ Licensed to the Apache Software Foundation (ASF) under one
+  ~ or more contributor license agreements.  See the NOTICE file
+  ~ distributed with this work for additional information
+  ~ regarding copyright ownership.  The ASF licenses this file
+  ~ to you under the Apache License, Version 2.0 (the
+  ~ "License"); you may not use this file except in compliance
+  ~ with the License.  You may obtain a copy of the License at
+  ~
+  ~   http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing,
+  ~ software distributed under the License is distributed on an
+  ~ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+  ~ KIND, either express or implied.  See the License for the
+  ~ specific language governing permissions and limitations
+  ~ under the License.
+-->
+
+---
+title: "Guide to enable the LLM‐based Texera agent"
+weight: 40
+---
+
 This guide explains how to enable the AI agent feature in Texera. For detailed explanation about this feature, see https://github.com/apache/texera/pull/4020.
 
 ## Prerequisites
 - Already know how to setup Texera
-- Python 3.10+
+- Python 3.11+
 - API key from a supported LLM provider (e.g., Anthropic, OpenAI)
 
 ## Step 1: Install LiteLLM
@@ -95,5 +119,3 @@ Start the **all** Texera micro services, including the `AccessControlService`.
 
 After opening any workflow, you should now see a robot icon at the bottom right. Click on it will expand a panel with all the available models:
 ![2025-11-25 18 34 39](/images/github-assets/c0fe6d8d-76ef-4761-9f4f-e23ebc2429fe.png)
-
-

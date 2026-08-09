@@ -6,6 +6,30 @@ aliases:
 
 ---
 
+<!--
+  ~ Licensed to the Apache Software Foundation (ASF) under one
+  ~ or more contributor license agreements.  See the NOTICE file
+  ~ distributed with this work for additional information
+  ~ regarding copyright ownership.  The ASF licenses this file
+  ~ to you under the Apache License, Version 2.0 (the
+  ~ "License"); you may not use this file except in compliance
+  ~ with the License.  You may obtain a copy of the License at
+  ~
+  ~   http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing,
+  ~ software distributed under the License is distributed on an
+  ~ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+  ~ KIND, either express or implied.  See the License for the
+  ~ specific language governing permissions and limitations
+  ~ under the License.
+-->
+
+---
+title: "Create Dataset, upload data to it and use it in Workflow"
+weight: 20
+---
+
 This tutorial goes through the process of preparing data by creating dataset and creating a workflow to analyze data resided in the dataset using Texera. 
 
 More specifically, we are going to create a dataset named `Sales Dataset` which contains a file about the sales data of different types of merchandises for several countries. And the workflow will calculate the average sales per item type across different countries in Europe from the [CountrySalesData.csv](statics/files/CountrySalesData.csv) (Make sure the downloaded file is in `.csv` file extension). The sales data has been downloaded from [eforexcel.com](http://eforexcel.com/wp/downloads-18-sample-csv-files-data-sets-for-testing-sales/) and has 100 rows of data. 
@@ -35,4 +59,3 @@ We will first be creating a dataset and uploading the sales data to it. Then we 
 
  * Drag and drop a `Aggregate` operator to get the average sold units group by `Item Type`
 ![2024-03-05 22 53 06](/images/github-assets/67ade74c-df20-44b1-a9fa-1b8edb4af0cf.png)
-
