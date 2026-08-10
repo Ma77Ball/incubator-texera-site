@@ -48,6 +48,7 @@ tags: [user-defined-functions, python]
 | Extra output column(s) |  | List<Attribute> | - | Name of the newly added output columns that the<br>UDF will produce, if any |
 | ↳ Attribute Name | ✓ | String | - |  |
 | ↳ Attribute Type | ✓ | string, integer, long, double, boolean,<br>timestamp, binary, large_binary | - |  |
+| Parameters |  | List<UiUDFParameter> | - | Values inferred from active `self.UiParameter(...)` calls.<br>See [UI parameters](../#ui-parameters). |
 
 #### Default Code Template
 
@@ -55,6 +56,10 @@ tags: [user-defined-functions, python]
 
 ```python
 # Choose from the following templates:
+#
+# Define UiParameter inside open() of ProcessTupleOperator, ProcessBatchOperator, or ProcessTableOperator.
+# Example: self.count = self.UiParameter("count", AttributeType.INT).value
+# See the Python UDF operator documentation for supported types and behavior.
 # 
 # from pytexera import *
 # 
