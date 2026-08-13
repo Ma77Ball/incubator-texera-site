@@ -1,0 +1,27 @@
+{{/* Renders a roster table from a slice of committer entries.
+     Each entry has: name (optional), id (Apache ID), role, mentor (bool).
+     Falls back to the Apache ID when no name is set. */}}
+<div class="committers-table-wrap">
+    <table class="committers-table">
+        <thead>
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Apache ID</th>
+                <th scope="col">Role</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{ range . }}
+            <tr>
+                <td>{{ with .name }}{{ . }}{{ else }}<span class="committers-noname">{{ .id }}</span>{{ end }}</td>
+                <td>
+                    <a href="https://people.apache.org/committer-index.html#{{ .id }}" target="_blank" rel="noopener"><code>{{ .id }}</code></a>
+                </td>
+                <td>
+                    {{ .role }}{{ if .mentor }} &middot; Mentor{{ end }}
+                </td>
+            </tr>
+            {{ end }}
+        </tbody>
+    </table>
+</div>

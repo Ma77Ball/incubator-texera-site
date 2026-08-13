@@ -1,0 +1,107 @@
+# Apache Texera (Incubating) committers roster.
+#
+# Rendered by layouts/committers/list.html at /committers/.
+#
+# The authoritative roster lives at (requires ASF login):
+#   https://whimsy.apache.org/roster/ppmc/texera
+#
+# The data below was sourced from public ASF records:
+#   - Apache IDs + PPMC membership: whimsy.apache.org/public/public_ldap_projects.json
+#   - Full names:                   whimsy.apache.org/public/icla-info.json
+#   - Mentors:                      incubator.apache.org podlings.xml
+#
+# Fields per entry:
+#   name   - Public full name.
+#   id     - Apache ID / LDAP username. Links to the committer's ASF profile.
+#   role   - "PPMC" for PPMC members, "Committer" otherwise.
+#   mentor - true for incubator mentors (a subset of the PPMC).
+#
+# Order does not matter; the page sorts each group by Apache ID.
+
+# --- PPMC Members ---------------------------------------------------------
+
+[[people]]
+name = "Ali Risheh"
+id = "aicam"
+role = "PPMC"
+
+[[people]]
+name = "Cezar Andrei"
+id = "cezar"
+role = "PPMC"
+mentor = true
+
+[[people]]
+name = "Chen Li"
+id = "chenli"
+role = "PPMC"
+
+[[people]]
+name = "PJ Fanning"
+id = "fanningpj"
+role = "PPMC"
+mentor = true
+
+[[people]]
+name = "Gordon King"
+id = "garyw"
+role = "PPMC"
+mentor = true
+
+[[people]]
+name = "Ian Maxon"
+id = "imaxon"
+role = "PPMC"
+mentor = true
+
+[[people]]
+name = "Jiadong Bai"
+id = "jiadongb"
+role = "PPMC"
+
+[[people]]
+name = "Chris Park"
+id = "kunwp1"
+role = "PPMC"
+
+[[people]]
+name = "Xinyuan Lin"
+id = "linxinyuan"
+role = "PPMC"
+
+[[people]]
+name = "Shengquan Ni"
+id = "shengquan"
+role = "PPMC"
+
+[[people]]
+name = "Xiaozhen Liu"
+id = "xiaozhenliu"
+role = "PPMC"
+
+[[people]]
+name = "Yicong Huang"
+id = "yiconghuang"
+role = "PPMC"
+
+[[people]]
+name = "Yunyan Ding"
+id = "yunyd"
+role = "PPMC"
+
+[[people]]
+name = "Zuozhi Wang"
+id = "zuozhiw"
+role = "PPMC"
+
+# --- Committers -----------------------------------------------------------
+
+[[people]]
+name = "Xuan Gu"
+id = "xuangu"
+role = "Committer"
+
+[[people]]
+name = "Meng Wang"
+id = "mengw15"
+role = "Committer"
