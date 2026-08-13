@@ -14,23 +14,50 @@
     </div>
 </section>
 
-<section class="row td-box td-box--white td-box--height-auto committers-tablebox">
+<section class="row td-box td-box--white td-box--height-auto committers-body">
     <div class="col-12 col-lg-10 offset-lg-1 px-4 pb-4">
-        {{ $people := sort .Site.Data.committers.people "id" }}
-        {{ $ppmc := where $people "role" "PPMC" }}
-        {{ $committers := where $people "role" "Committer" }}
+        {{ $people := .Site.Data.committers.people }}
+        {{ $mentors := where $people "group" "mentor" }}
+        {{ $ppmc := where $people "group" "ppmc" }}
+        {{ $committers := where $people "group" "committer" }}
 
-        <h2 id="ppmc">PPMC Members</h2>
-        <p class="committers-note">
-            The Podling Project Management Committee (PPMC) guides the project
-            during incubation. It includes the project's incubator mentors.
-        </p>
-        {{ partial "committers_table.html" $ppmc }}
+        {{ with $mentors }}
+        <div class="committers-section">
+            <h2 id="mentors">Mentors</h2>
+            <p class="committers-group-note">
+                Incubation mentors from the Apache Incubator, who are also PPMC members.
+            </p>
+            {{ partial "committers_grid.html" . }}
+        </div>
+        {{ end }}
+
+        {{ with $ppmc }}
+        <div class="committers-section">
+            <h2 id="ppmc">PPMC Members</h2>
+            <p class="committers-group-note">
+                The Podling Project Management Committee guides the project during
+                incubation. Together with the mentors above, the PPMC has 14 members.
+            </p>
+            {{ partial "committers_grid.html" . }}
+        </div>
+        {{ end }}
 
         {{ with $committers }}
-        <h2 id="committers">Committers</h2>
-        {{ partial "committers_table.html" . }}
+        <div class="committers-section">
+            <h2 id="committers">Committers</h2>
+            <p class="committers-group-note">
+                Every PPMC member above is also a committer. Including them, the
+                project has 16 committers.
+            </p>
+            {{ partial "committers_grid.html" . }}
+        </div>
         {{ end }}
+
+        {{ with .Content -}}
+        <div class="td-content committers-about">
+            {{ . }}
+        </div>
+        {{- end }}
 
         <p class="committers-source">
             The authoritative roster is maintained at
@@ -38,15 +65,5 @@
         </p>
     </div>
 </section>
-
-{{ with .Content -}}
-<section class="row td-box td-box--white td-box--height-auto">
-    <div class="col-12 col-lg-10 offset-lg-1 px-4 pb-4">
-        <div class="td-content">
-            {{ . }}
-        </div>
-    </div>
-</section>
-{{- end -}}
 
 {{ end }}

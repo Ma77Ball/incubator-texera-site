@@ -5,103 +5,115 @@
 # The authoritative roster lives at (requires ASF login):
 #   https://whimsy.apache.org/roster/ppmc/texera
 #
-# The data below was sourced from public ASF records:
-#   - Apache IDs + PPMC membership: whimsy.apache.org/public/public_ldap_projects.json
-#   - Full names:                   whimsy.apache.org/public/icla-info.json
-#   - Mentors:                      incubator.apache.org podlings.xml
-#
 # Fields per entry:
 #   name   - Public full name.
 #   id     - Apache ID / LDAP username. Links to the committer's ASF profile.
-#   role   - "PPMC" for PPMC members, "Committer" otherwise.
-#   mentor - true for incubator mentors (a subset of the PPMC).
+#   github - GitHub username (optional). Links to the GitHub profile.
+#   group  - "mentor", "ppmc", or "committer".
 #
-# Order does not matter; the page sorts each group by Apache ID.
+# Groups are listed without duplication, mirroring the project roster:
+#   mentor    -> incubator mentors (also PPMC members)
+#   ppmc      -> PPMC members excluding the mentors above (10; 14 PPMC total)
+#   committer -> committers excluding the PPMC above (16 committers total)
 
-# --- PPMC Members ---------------------------------------------------------
-
-[[people]]
-name = "Ali Risheh"
-id = "aicam"
-role = "PPMC"
+# --- Mentors --------------------------------------------------------------
 
 [[people]]
-name = "Cezar Andrei"
+name = "Cezar Cristian Andrei"
 id = "cezar"
-role = "PPMC"
-mentor = true
-
-[[people]]
-name = "Chen Li"
-id = "chenli"
-role = "PPMC"
-
-[[people]]
-name = "PJ Fanning"
-id = "fanningpj"
-role = "PPMC"
-mentor = true
+github = "cezarfx"
+group = "mentor"
 
 [[people]]
 name = "Gordon King"
 id = "garyw"
-role = "PPMC"
-mentor = true
+github = "bigdata-memory"
+group = "mentor"
 
 [[people]]
 name = "Ian Maxon"
 id = "imaxon"
-role = "PPMC"
-mentor = true
+github = "parshimers"
+group = "mentor"
 
 [[people]]
-name = "Jiadong Bai"
-id = "jiadongb"
-role = "PPMC"
+name = "PJ Fanning"
+id = "fanningpj"
+github = "pjfanning"
+group = "mentor"
+
+# --- PPMC Members (excluding mentors) -------------------------------------
+
+[[people]]
+name = "Ali Risheh"
+id = "aicam"
+github = "aicam"
+group = "ppmc"
+
+[[people]]
+name = "Chen Li"
+id = "chenli"
+github = "chenlica"
+group = "ppmc"
 
 [[people]]
 name = "Chris Park"
 id = "kunwp1"
-role = "PPMC"
+github = "kunwp1"
+group = "ppmc"
 
 [[people]]
-name = "Xinyuan Lin"
-id = "linxinyuan"
-role = "PPMC"
+name = "Jiadong Bai"
+id = "jiadongb"
+github = "bobbai00"
+group = "ppmc"
 
 [[people]]
 name = "Shengquan Ni"
 id = "shengquan"
-role = "PPMC"
+github = "shengquan-ni"
+group = "ppmc"
 
 [[people]]
 name = "Xiaozhen Liu"
 id = "xiaozhenliu"
-role = "PPMC"
+github = "Xiao-zhen-Liu"
+group = "ppmc"
+
+[[people]]
+name = "Xinyuan Lin"
+id = "linxinyuan"
+github = "aglinxinyuan"
+group = "ppmc"
 
 [[people]]
 name = "Yicong Huang"
 id = "yiconghuang"
-role = "PPMC"
+github = "Yicong-Huang"
+group = "ppmc"
 
 [[people]]
 name = "Yunyan Ding"
 id = "yunyd"
-role = "PPMC"
+github = "yunyad"
+group = "ppmc"
 
 [[people]]
 name = "Zuozhi Wang"
 id = "zuozhiw"
-role = "PPMC"
+github = "zuozhiw"
+group = "ppmc"
 
-# --- Committers -----------------------------------------------------------
-
-[[people]]
-name = "Xuan Gu"
-id = "xuangu"
-role = "Committer"
+# --- Committers (excluding PPMC) ------------------------------------------
 
 [[people]]
 name = "Meng Wang"
 id = "mengw15"
-role = "Committer"
+github = "mengw15"
+group = "committer"
+
+[[people]]
+name = "Xuan Gu"
+id = "xuangu"
+github = "xuang7"
+group = "committer"
