@@ -17,9 +17,9 @@
 <section class="row td-box td-box--white td-box--height-auto committers-body">
     <div class="col-12 col-lg-10 offset-lg-1 px-4 pb-4">
         {{ $people := .Site.Data.committers.people }}
-        {{ $mentors := where $people "group" "mentor" }}
-        {{ $ppmc := where $people "group" "ppmc" }}
-        {{ $committers := where $people "group" "committer" }}
+        {{ $mentors := sort (where $people "group" "mentor") "lastname" }}
+        {{ $ppmc := sort (where $people "group" "ppmc") "lastname" }}
+        {{ $committers := sort (where $people "group" "committer") "lastname" }}
 
         {{ with $mentors }}
         <div class="committers-section">

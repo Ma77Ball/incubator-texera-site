@@ -335,6 +335,11 @@ section:has(.services-section) {
   line-height: 1.3;
 }
 
+.committer-affiliation {
+  font-size: 0.85rem;
+  color: #5f6368;
+}
+
 .committer-handles {
   display: flex;
   flex-wrap: wrap;

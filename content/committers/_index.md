@@ -1,7 +1,10 @@
 ---
 title: Committers
 linkTitle: Committers
-menu: {main: {weight: 36}}
+menu:
+  main:
+    parent: community
+    weight: 20
 aliases:
   - /committers.html
 ---
